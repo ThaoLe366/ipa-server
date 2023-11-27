@@ -1,8 +1,8 @@
-// +heroku goVersion go 1.16
+// +heroku goVersion go 1.20
 
 module github.com/iineva/ipa-server
 
-go 1.16
+go 1.20
 
 require (
 	github.com/aliyun/aliyun-oss-go-sdk v2.1.8+incompatible
