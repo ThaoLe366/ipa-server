@@ -30,9 +30,12 @@ func redirect(m map[string]string, next http.Handler) http.Handler {
 }
 
 func main() {
-
+	port := os.Getenv("PORT")
+	if port == "" {
+	    port = "9000" // Default port if not specified
+	}
 	addr := flag.String("addr", "0.0.0.0", "bind addr")
-	port := flag.String("port", "8080", "bind port")
+	port := flag.String("port", port, "bind port")
 	debug := flag.Bool("d", false, "enable debug logging")
 	storageDir := flag.String("dir", "upload", "upload data storage dir")
 	publicURL := flag.String("public-url", "", "server public url")
