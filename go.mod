@@ -1,6 +1,6 @@
 module github.com/iineva/ipa-server
 
-go 1.16
+go1.16
 
 require (
 	github.com/aliyun/aliyun-oss-go-sdk v2.1.8+incompatible
