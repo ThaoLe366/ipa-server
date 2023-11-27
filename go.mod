@@ -1,4 +1,4 @@
-// +heroku goVersion go 1.20
+// +heroku goVersion go1.20
 
 module github.com/iineva/ipa-server
 
